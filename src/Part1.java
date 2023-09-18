@@ -72,7 +72,7 @@ public class Part1 {
         int numSwaps = 0;
         for (int i = 0; i < array.length; i++) {
             numIterations += 1;
-            for (int j = 0; j < array.length - 1; j += 2) {
+            for (int j = 0; j < array.length; j += 2) {
                 numIterations += 1;
                 if (j + 1 < array.length && array[j] > array[j + 1]) {
                     swap(array, j, j + 1);
